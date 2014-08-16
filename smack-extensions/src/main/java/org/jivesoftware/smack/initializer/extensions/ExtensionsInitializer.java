@@ -25,13 +25,13 @@ import org.jivesoftware.smack.initializer.UrlInitializer;
  */
 public class ExtensionsInitializer extends UrlInitializer {
 
-    @Override
-    protected String getProvidersUrl() {
-        return "classpath:org.jivesoftware.smackx/extensions.providers";
-    }
+	@Override
+	protected String getProvidersUrl() {
+		return "classpath:extensions.providers";
+	}
 
-    @Override
-    protected String getConfigUrl() {
-        return "classpath:org.jivesoftware.smackx/extensions.xml";
-    }
+	@Override
+	protected String getConfigUrl() {
+		return "classpath:extensions.xml";
+	}
 }
